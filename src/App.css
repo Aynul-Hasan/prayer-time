@@ -1,38 +1,115 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wi{
+  width: 220px;
+  color:  #000 ;
+  border:none ;
+  background-color: #ffffff62 !important;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.input-date{
+  width: 220px;
+  background-color: #ffffff62 !important;
+  color: rgb(0, 0, 0);
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-radius:5px ;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form{
+  margin: auto !important;
+}
+.clock{
+  background-color: #ffffff62;
+  width: 150px;
+  height: 150px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  border-radius: 50% ;
+  box-shadow:  inset 5px 5px 5px #ffffff62 ,
+   inset -5px -5px 5px #ffffff62;
+}
+.namaz{
+  background-color: #ffffff62;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 30px 0px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all .4s ease-in-out;
+}
+.namaz:hover{
+  background-color: rebeccapurple;
+}
+.namaz h6{
+  font-size: 25px;
 }
 
-.App-link {
-  color: #61dafb;
+video{
+  object-fit: cover;
+  margin: 0 !important;
+  width: 100%;
+  height:600px ;
+  z-index: -1;
 }
+.dv{
+  position: relative;
+  padding: 0 !important;
+}
+.info-section{
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+.main-div{
+  
+  
+  position: absolute;
+  top: 0%;
+  display: flex;
+  justify-content: center;
+  
+  width: 100% !important;
+}
+.main-con{
+  width: 90% !important;
+  height: auto;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+}
+.location-input{
+  transition: all .2s ease-in-out !important;
+  
+  
+}
+.location-input-add{
+  display: none;
+  opacity: 0;
+
+}
+.submit-btn{
+ background:#ffffffc4;
+  border: none;
+  border-radius: 0 20px 20px 0;
+  padding: 10px 15px;
+  margin-left:-0px;
+}
+.search-input{
+
+  width: 150px;
+  font-size: 25px;
+  border: none;
+  padding: 0 15px;
+  border-radius: 20px 0 0 20px  ;
+  background: #ffffff62;
+  outline: none;
+}
+.search-icon{
+  font-size: 44px;
 }
