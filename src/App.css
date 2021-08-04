@@ -45,7 +45,6 @@
   transition: all .4s ease-in-out;
 }
 .namaz:hover{
-  background-image: linear-gradient(top  to bottom, #451761, #460b45);
 }
 .namaz h6{
   font-size: 25px;
@@ -68,12 +67,15 @@
   align-self: center;
 }
 .main-div{
+  height: 600px;
+  background-image: linear-gradient(to top, #451761, #460b45) !important;
   
   
-  position: absolute;
+  /* position: absolute;
   top: 0%;
   display: flex;
-  justify-content: center;
+  justify-content: center; */
+
   
   width: 100% !important;
 }
@@ -98,18 +100,19 @@
 }
 .location-input:hover> .search-input{
   width: 200px ;
+  opacity: 1;
   padding: 0 15px;
 
 }
 .search-input{
 
   width: 0px;
-  
+  opacity: 0;
   font-size: 25px;
   border: none;
   /* padding: 0 15px; */
   border-radius: 20px;
-  background: #ffffff62;
+  background: #ffffffcc;
   outline: none;
   transition: all .6s ease-in-out;
 }

@@ -76,9 +76,9 @@ export const Namaz = () => {
         <>
             <div className="container-fluid">
             <div className="row d-flex justify-content-center align-items-center">
-                <div className="col-lg-5 col-sm-12 dv">
-                   <video src="/video/fajr.mp4" autoPlay loop muted></video> 
-                <div className="main-div">
+                <div className="col-lg-5 col-sm-12 ">
+                   {/* <video src="/video/fajr.mp4" autoPlay loop muted></video>  */}
+                <div className=" main-div  d-flex justify-content-center">
                 <div className="main-con text-center mt-4">
                 <h1>Today</h1>
                 
