@@ -45,19 +45,19 @@
   transition: all .4s ease-in-out;
 }
 .namaz:hover{
-  background-color: rebeccapurple;
+  background-image: linear-gradient(top  to bottom, #451761, #460b45);
 }
 .namaz h6{
   font-size: 25px;
 }
 
-video{
+ video{
   object-fit: cover;
   margin: 0 !important;
   width: 100%;
   height:600px ;
   z-index: -1;
-}
+} 
 .dv{
   position: relative;
   padding: 0 !important;
@@ -84,32 +84,45 @@ video{
 
 }
 .location-input{
-  transition: all .2s ease-in-out !important;
+  /* transition: all .6s ease-in-out !important; */
   
   
 }
-.location-input-add{
-  display: none;
-  opacity: 0;
 
-}
 .submit-btn{
- background:#ffffffc4;
+  background:none !important;
   border: none;
-  border-radius: 0 20px 20px 0;
-  padding: 10px 15px;
-  margin-left:-0px;
+  border-radius: 50%;
+  
+  margin-left:-25px;
+}
+.location-input:hover> .search-input{
+  width: 200px ;
+  padding: 0 15px;
+
 }
 .search-input{
 
-  width: 150px;
+  width: 0px;
+  
   font-size: 25px;
   border: none;
-  padding: 0 15px;
-  border-radius: 20px 0 0 20px  ;
+  /* padding: 0 15px; */
+  border-radius: 20px;
   background: #ffffff62;
   outline: none;
+  transition: all .6s ease-in-out;
 }
 .search-icon{
-  font-size: 44px;
+  font-size: 20px;
+  display: grid;
+  place-items: center;
+
+}
+.container-div{
+  overflow-y: scroll;
+  height: 12rem;
+}
+.container-div::-webkit-scrollbar{
+  display: none;
 }

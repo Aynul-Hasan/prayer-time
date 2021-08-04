@@ -1,9 +1,9 @@
-import React ,{useState,useEffect} from 'react'
+import React ,{useState} from 'react'
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css"
 import { BsFillCalendarFill} from "react-icons/bs";
 import { ImLocation } from "react-icons/im";
 
-import { FaSearchLocation,FaTimes } from "react-icons/fa";
+import { FaSearchLocation } from "react-icons/fa";
 
 
 export const Namaz = () => {
@@ -84,16 +84,11 @@ export const Namaz = () => {
                 
                 <div className="info-section">
                     <h5>{select===''? day:select}</h5> 
-                    <div className="d-flex align-content-center" >
-                    <FaSearchLocation onClick={()=>{setSearch(true)}} className={search===false?"search-icon d-block":"d-none"} ></FaSearchLocation>
-                    <div className={search===true?"location-input d-block":"location-input-add"}>
-                      <form action=""  className="d-flex">
+                    <div className="location-input">
                     <input type="text" placeholder="Location" onChange={(e)=>{setLocationValue(e.target.value)}} className="search-input" />
-                    <button type="submit"  className="submit-btn" > {locationValue===''?<FaTimes onClick={()=>{setSearch(false)}} ></FaTimes> : <FaSearchLocation onClick={todayPrayerTime}></FaSearchLocation>}</button>
-                    </form>  
-
+                    <button type="submit"  className="submit-btn" > <FaSearchLocation className="search-icon" onClick={todayPrayerTime}></FaSearchLocation></button>
                     </div>
-                    </div>
+                  
                 </div>
                 <div className='d-flex justify-content-center align-content-center my-3'>
                 <div className="clock ">
@@ -121,7 +116,7 @@ export const Namaz = () => {
 
                 </div>
                 {/* times div */}
-                <div className={response===true?'d-block overflow-auto h-25':'d-none'} >
+                <div className={response===true?'d-block container-div':'d-none'} >
                 <div className="namaz my-3">
                     <h6>Fajr</h6><h6>{fajr}</h6>
                 </div>
@@ -145,11 +140,6 @@ export const Namaz = () => {
          
                 </div>
                
-                {/* <Calendar
-                    onChange={(e)=>{ setSelect(e)}}
-                 className={aclender===false?"d-none":"d-block shadow" }>
-                 </Calendar>
-                 <button className={calender===false?"d-none":"d-block  wi bg-white"} >Prayer Time</button> */}
                
                 </div>
             </div>
