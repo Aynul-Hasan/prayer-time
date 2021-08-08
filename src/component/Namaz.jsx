@@ -2,7 +2,6 @@ import React ,{useState} from 'react'
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css"
 import { BsFillCalendarFill} from "react-icons/bs";
 import { ImLocation } from "react-icons/im";
-
 import { FaSearchLocation } from "react-icons/fa";
 
 
@@ -11,7 +10,7 @@ export const Namaz = () => {
     let day=`${new Date().getFullYear()}-${new Date().getMonth()+1}-${new Date().getDate()}`
     //  let response=false;
     // console.log(date)
-    const [search, setSearch] = useState(false)
+    
     const [calender, setCalender] = useState(false)
     const [response, setresponse] = useState(false)
     const [select, setSelect] = useState('')
@@ -47,7 +46,7 @@ export const Namaz = () => {
         setisha(data.results.datetime[0].times.Isha)
         console.log(` from location ${data}`)
         setresponse(true);
-        setSearch(false)
+       
         }
         else if( locationValue===''){
             alert(`please enter your city`)
@@ -76,8 +75,9 @@ export const Namaz = () => {
         <>
             <div className="container-fluid">
             <div className="row d-flex justify-content-center align-items-center">
-                <div className="col-lg-5 col-sm-12 ">
-                   {/* <video src="/video/fajr.mp4" autoPlay loop muted></video>  */}
+                <div className="col-lg-5 col-sm-12 p-0 dv ">
+               <video src="/video/fajr.mp4" autoPlay loop muted></video> 
+                
                 <div className=" main-div  d-flex justify-content-center">
                 <div className="main-con text-center mt-4">
                 <h1>Today</h1>
